@@ -20,11 +20,19 @@ public class Square
      */
     public Square()
     {
-        size = 60;
+        size = 120;
         xPosition = 310;
         yPosition = 120;
         color = "red";
         isVisible = false;
+    }
+
+    public Square (Posicion p1){
+        xPosition= p1.x;
+        yPosition= p1.y;
+        size = 150;
+        color = "purple";
+        isVisible = true;
     }
 
     /**
@@ -189,3 +197,4 @@ public class Square
         }
     }
 }
+

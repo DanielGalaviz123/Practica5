@@ -2,13 +2,20 @@ public class Carta {
     private int valor; 
     private Palo palo;
 
-    
     public Carta(int valor, Palo palo) {
         this.valor = valor;
         this.palo = palo;
     }
 
-    // Metodo para obtener la representacion en cadena
+    public int getValor() {
+        return valor;
+    }
+
+    public Palo getTipo() {
+        return palo;
+    }
+
+    
     @Override
     public String toString() {
         String valorString;
@@ -22,4 +29,5 @@ public class Carta {
         return valorString + " de " + palo;
     }
 }
+
 

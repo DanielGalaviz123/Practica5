@@ -27,6 +27,14 @@ public class Circle
         color = "blue";
     }
 
+    public Circle (Posicion p2){
+        xPosition= p2.x;
+        yPosition= p2.y;
+        diameter = 10;
+        color = "black";
+        isVisible = true;
+    }
+
     /**
      * Make this circle visible. If it was already visible, do nothing.
      */
